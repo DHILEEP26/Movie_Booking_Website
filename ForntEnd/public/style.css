@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/8728.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* This will make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color to make text readable */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}

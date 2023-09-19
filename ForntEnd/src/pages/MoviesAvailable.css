@@ -1,0 +1,215 @@
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #ffffff 29%,
+    #ff1c1c 67%,
+    #ff1c1c 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.fancy{
+        @supports (background-clip: text) or (-webkit-background-clip: text) {
+          background-image: 
+            url("https://thumbs.dreamstime.com/z/vector-illustration-television-filming-sign-set-viewing-stock-isolated-object-logo-collection-icon-152091230.jpg?w=768");
+          background-size: 110% auto;
+          background-position: center;
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+}
+.link{
+    position: absolute;
+    right: 0px;
+    width:200px;
+    height: 120px;
+    border: #000000;
+}
+
+.MovieSelection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.movie{
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.movie_poster{
+    border-radius: 20px;
+    height: 300px;
+}
+.movie_name{
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ff0000;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+.movie_rating{
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+  
+}
+.screen_selection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.screen_selection .screen{
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
+    transition: all 0.25s;
+    padding: 1rem;
+    background-color: #fff;
+}
+.screen_selection .screen:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+
+}
+.screen_selection .screen.selected{
+    background-color: #636363;
+    color: rgb(255, 255, 255);
+}
+.screen_selection .screen:not(.available){
+    background-color:#f1e6e6;
+    color: #444;
+    cursor: not-allowed;
+}
+.screen_selection .screen-number{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ff0000;
+}
+.screen_selection .screen-time{
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+.screen_selection .screen-seats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.screen_selection .screen-seats .seat{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.screen_selection .screen-seats .seat.selected{
+    background-color: #ff1616;
+    color: rgb(255, 255, 255);
+}
+.screen_selection .screen-seats .seat:not(.available){
+    background-color: rgb(125, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: not-allowed;
+}
+.booking-summary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.booking-summary .selected-screen{
+    margin: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgb(120, 120, 120);
+    transition: all 0.25s;
+    padding: 1rem; 
+    background-color: #636363;
+    color: aliceblue;
+}
+.booking-summary .selected-seat{
+    margin: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgb(130, 130, 130);
+    transition: all 0.25s;
+    padding: 1rem;  
+    background-color: #585858;
+    color: rgb(255, 255, 255);
+}
+
+
+.button-75 {
+  align-items: center;
+  background-image: linear-gradient(135deg, #ff2020 40%, #ff0000);
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  letter-spacing: .4px;
+  line-height: 1;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+}
